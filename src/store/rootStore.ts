@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import { timeApi } from '~/store/apis/timeApi/timeApi';
+import { timeApi } from '~/store/apis/timeApi';
 import { counterSliceReducer } from '~/store/slices/counter';
 
 export const rootStore = configureStore({

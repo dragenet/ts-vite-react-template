@@ -1,3 +1,3 @@
 export interface TimeDTO {
-  time: string;
+  timezone: string;
 }
