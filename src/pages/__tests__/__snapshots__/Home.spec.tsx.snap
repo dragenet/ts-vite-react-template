@@ -3,7 +3,7 @@
 exports[`Home page > renders correctly 1`] = `
 <div>
   <div
-    class="sc-beqWaB iyGiqO"
+    class="sc-beqWaB hMpAGA"
   >
     <svg
       aria-hidden="true"
@@ -22,10 +22,20 @@ exports[`Home page > renders correctly 1`] = `
       />
     </svg>
     <h1
-      class="sc-gueYoa dXqFNr"
+      class="sc-gueYoa cydMXb"
     >
       Hello!
     </h1>
+    <span
+      class="sc-dmqHEX XeFnf"
+    >
+      0
+    </span>
+    <button
+      class="sc-hLseeU fwgPZR"
+    >
+      Increment
+    </button>
   </div>
 </div>
 `;
