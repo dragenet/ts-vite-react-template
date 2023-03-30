@@ -1,5 +1,5 @@
 {
-  "name": "animals-gallery-recruitment-task",
+  "name": "sample-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -18,7 +18,10 @@
     "lint:fix": "eslint --fix",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",
     "lint": "yarn lint:format && yarn lint:fix ",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "clean:build": "pnpm rimraf ./dist",
+    "clean:coverage": "pnpm rimraf ./coverage",
+    "clean": "pnpm clean:build && pnpm clean:coverage"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
@@ -54,6 +57,7 @@
     "jsdom": "^21.1.1",
     "lint-staged": "^13.2.0",
     "prettier": "^2.5.1",
+    "rimraf": "^4.4.1",
     "typescript": "^4.9.3",
     "vite": "^4.2.0",
     "vite-plugin-svgr": "^2.4.0",
