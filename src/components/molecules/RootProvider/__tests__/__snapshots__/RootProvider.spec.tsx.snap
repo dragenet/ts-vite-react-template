@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RootProvider > children renders correctly 1`] = `
+<div>
+  <div>
+    I am here
+  </div>
+</div>
+`;
