@@ -1,12 +1,28 @@
 import { ReactComponent as ReactLogo } from '~/assets/react.svg';
+import { useGetTimeByTimeZoneQuery } from '~/store/apis/timeApi/timeApi';
+import { useAppDispatch } from '~/store/hooks/useAppDispatch';
+import { useAppSelector } from '~/store/hooks/useAppSelector';
+import { increment, selectCount } from '~/store/slices/counter';
 
-import { BackgroundWrapper, StyledH1 } from './parts';
+import { BackgroundWrapper, StyledButton, StyledClock, StyledH1, StyledSpan } from './parts';
 
 export const HomePageTemplate = () => {
+  const counterState = useAppSelector(selectCount);
+  const dispatch = useAppDispatch();
+  const { data, isSuccess } = useGetTimeByTimeZoneQuery('UTC');
+
+  const handleIncrementClick = () => {
+    dispatch(increment());
+  };
+
   return (
     <BackgroundWrapper>
       <ReactLogo />
       <StyledH1>Hello!</StyledH1>
+      <StyledSpan>{counterState}</StyledSpan>
+      <StyledButton onClick={handleIncrementClick}>Increment</StyledButton>
+      {isSuccess && <StyledClock>{data}</StyledClock>}
+      <StyledClock>data</StyledClock>
     </BackgroundWrapper>
   );
 };
