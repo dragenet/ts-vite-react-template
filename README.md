@@ -5,6 +5,7 @@ tooling, including Vite, SWC, Vitest, Redux Toolkit, etc. The templates are orga
 into separate folders and are available on the branch. 
 These templates can be used as a solid starting point for building a React application 
 with the latest tooling and best practices.
+
 ## 📝Templates
 ### 1. Base Template
 This template contains the following:
@@ -45,11 +46,11 @@ To use the templates, follow the steps below:
    ```
 
 2. Clone the repository:
-   - Base Template
+   - Base Template:
       ```
       degit  https://github.com/dragenet/ts-vite-react-template.git/base <target-dir>
       ```
-   - With Redux Toolkit
+   - With Redux Toolkit:
       ```
       degit  https://github.com/dragenet/ts-vite-react-template.git/with-redux-toolkit <target-dir>
       ```
@@ -62,7 +63,7 @@ To use the templates, follow the steps below:
    
 4. Initialize git:
     ```
-        git init
+    git init
     ```
 
 5. Install dependencies:
@@ -88,6 +89,7 @@ Each template has the following file and folder structure (excluding store direc
 ├── public
 │   └── vite.svg
 ├── src
+│   ├── main.tsx
 │   ├── App.tsx
 │   ├── assets
 │   ├── components
@@ -96,10 +98,8 @@ Each template has the following file and folder structure (excluding store direc
 │   │   │   └── RootProvider
 │   │   └── templates
 │   │       └── HomePageTemplate
-│   ├── main.tsx
 │   ├── pages
 │   │   ├── Home.tsx
-│   │   └── __tests__
 │   ├── router
 │   ├── store (*only for with-redux-toolkit template)
 │   │   ├── apis
