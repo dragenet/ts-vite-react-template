@@ -12,6 +12,7 @@ This template contains the following:
 - Vite
 - React
 - SWC
+- Styled Components
 - Vitest
 - Testing Library
 - Eslint
@@ -25,12 +26,13 @@ This template contains the following:
 - Vite
 - React
 - SWC
+- Styled Components
 - Vitest
 - Testing Library
 - Eslint
 - Prettier
 - lint-staged
-- Redux-toolkit
+- __Redux Toolkit__
 
 ## 🔧 Installation
 
