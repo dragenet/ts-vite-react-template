@@ -14,6 +14,7 @@ This template contains the following:
 - React
 - SWC
 - Styled Components
+- svgr
 - Vitest
 - Testing Library
 - Eslint
@@ -28,6 +29,7 @@ This template contains the following:
 - React
 - SWC
 - Styled Components
+- svgr
 - Vitest
 - Testing Library
 - Eslint
