@@ -1,4 +1,4 @@
-# Modern Tooling SWC template
+# Modern Tooling React Templates
 
 This repository contains two React templates for starting a project with modern 
 tooling, including Vite, SWC, Vitest, Redux Toolkit, etc. The templates are organized
